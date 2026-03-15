@@ -1,35 +1,30 @@
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0%;
-  /* background:linear-gradient(#ffffff, #4ee7ec93); */
-  /* background:radial-gradient(#ffffff,#1eddff86); */
   background-color: rgb(238, 213, 167);
   background-size: contain;
   overflow-x: hidden;
-  font-family:  'Inter', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Inter', Georgia, 'Times New Roman', Times, serif;
 }
 
 #gcleff{
-  width: 10%;
+  width: clamp(60px, 8vw, 120px);
   position: absolute;
   right: 60px;
   top: 50px;
   transform: rotate(1deg);
 }
 
-
 #notes2{
-  width: 4%;
+  width: clamp(30px, 3vw, 60px);
   position: absolute;
   left: 90px;
   top: 40px;
   transform: rotate(-4deg);
 }
-
 
 main {
   min-height: 100vh;
@@ -38,18 +33,17 @@ main {
 }
 
 main p{
-font-size: 20px;
-align-self: center;
-color: rgb(0, 0, 0);
-font-style: italic;
+  font-size: 20px;
+  align-self: center;
+  color: rgb(0, 0, 0);
+  font-style: italic;
 }
 
-
 #page h1{
-  font-size: 50px;
-  font-weight:50;
-  font-style:italic;
-  align-self:center;
+  font-size: clamp(24px, 3.5vw, 50px);
+  font-weight: 50;
+  font-style: italic;
+  align-self: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border: 2px solid black;
   border-radius: 10px;
@@ -61,47 +55,35 @@ font-style: italic;
 #page{
   display: flex;
   flex-direction: column;
-  gap:10px;
-
-
+  gap: 10px;
 }
 
-
-
 #intro{
-  font-size: 40px;
- font-family: "Segoe UI";
-  border: 2px black;
-  border-style:solid;
+  font-family: "Segoe UI";
+  border: 2px solid black;
   width: 40vw;
-  font-style:italic;
+  font-style: italic;
   padding: 18px;
   margin-left: 10px;
   word-spacing: 3px;
-  font-size: 20px;
+  font-size: clamp(14px, 1.5vw, 20px);
   line-height: 30px;
   border-radius: 10px;
   box-shadow: 10px 10px black;
-
-
   background-color: #2aca8f6b;
   align-self: flex-start;
-
-
 }
 
 #intro2{
-  font-size: 40px;
-  margin-top:-40px;
+  margin-top: -40px;
   font-family: "Segoe UI";
-  border: 2px black;
-  border-style:solid;
+  border: 2px solid black;
   width: 40vw;
-  font-style:italic;
+  font-style: italic;
   padding: 18px;
   margin-right: 10px;
   word-spacing: 3px;
-  font-size: 20px;
+  font-size: clamp(14px, 1.5vw, 20px);
   line-height: 30px;
   border-radius: 10px;
   box-shadow: -10px 10px black;
@@ -110,16 +92,14 @@ font-style: italic;
 }
 
 #intro3{
-  font-size: 40px;
   font-family: "Segoe UI";
-  border: 2px black;
-  border-style:solid;
+  border: 2px solid black;
   width: 40vw;
-  font-style:italic;
+  font-style: italic;
   padding: 18px;
   margin-left: 10px;
   word-spacing: 3px;
-  font-size: 20px;
+  font-size: clamp(14px, 1.5vw, 20px);
   line-height: 30px;
   border-radius: 10px;
   box-shadow: 10px 10px black;
@@ -128,17 +108,15 @@ font-style: italic;
 }
 
 #legend{
-  font-size: 40px;
   font-family: "Segoe UI";
-  border: 2px black;
-  border-style:solid;
+  border: 2px solid black;
   width: 20vw;
-  font-style:italic;
+  font-style: italic;
   margin-top: 50px;
   padding: 18px;
   margin-left: 10px;
   word-spacing: 3px;
-  font-size: 20px;
+  font-size: clamp(12px, 1.2vw, 20px);
   line-height: 30px;
   border-radius: 10px;
   box-shadow: 10px 10px black;
@@ -147,31 +125,34 @@ font-style: italic;
 }
 
 #vidheader{
-  position:absolute;
-  bottom: 340px;
-  right:30px;
-  font-size: 20px;
+  position: absolute;
+  bottom: 34vh;
+  right: 4%;
+  font-size: clamp(14px, 1.5vw, 20px);
   font-family: "Segoe UI";
   padding: 10px;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
   box-shadow: -5px 5px black;
+  z-index: 20;
+  max-width: 30vw;
 }
 
 #downarr{
   position: absolute;
   width: 2%;
-  bottom: 290px;
-  right: 300px;
+  bottom: 28vh;
+  right: 18%;
 }
 
 #ytvid{
-  position:absolute;
-  bottom: 10px;
-  width: 460px;
-  height:270px;
-  right: 60px;
+  position: absolute;
+  bottom: 2vh;
+  width: 21vw;
+  height: auto;
+  aspect-ratio: 16/9;
+  right: 7%;
   border: 5px solid rgb(0, 0, 0);
   border-radius: 10px;
 
@@ -184,14 +165,11 @@ font-style: italic;
   transform: translateX(-50%);
   display: flex;
   border: 5px solid black;
-
 }
-
-
 
 .keywhite{
   height: 200px;
-  width: 80px;           
+  width: 80px;
   background-color: white;
   border: 1px solid black;
 }
@@ -199,42 +177,40 @@ font-style: italic;
 .keyblack{
   position: absolute;
   height: 100px;
-  width: 40px;           
+  width: 40px;
   background-color: black;
   z-index: 10;
 }
 
 #cs{
-    position: absolute;
-    bottom: 100px;
-    left: 60px;
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
 }
 
 #ds{
-    position: absolute;
-    bottom: 100px;
-    left: 140px;
+  position: absolute;
+  bottom: 100px;
+  left: 140px;
 }
 
 #fs{
-    position: absolute;
-    bottom: 100px;
-    left: 300px;
+  position: absolute;
+  bottom: 100px;
+  left: 300px;
 }
 
 #gs{
-    position: absolute;
-    bottom: 100px;
-    left: 380px;
+  position: absolute;
+  bottom: 100px;
+  left: 380px;
 }
 
 #as{
-    position: absolute;
-    bottom: 100px;
-    left: 460px;
+  position: absolute;
+  bottom: 100px;
+  left: 460px;
 }
-
-
 
 .keywhite, .keyblack {
   cursor: pointer;
@@ -242,34 +218,23 @@ font-style: italic;
   transition: filter 0.05s ease;
 }
 
-
-.keywhite:active {
+.keywhite:active, .keywhite.pressed {
   filter: brightness(0.7);
 }
 
-.keyblack:active {
-  filter: brightness(1.2);
-  background-color: rgb(53, 50, 50);
-}
-
-.keywhite.pressed {
-  filter: brightness(0.7);
-}
-
-.keyblack.pressed {
+.keyblack:active, .keyblack.pressed {
   filter: brightness(1.2);
   background-color: rgb(53, 50, 50);
 }
 
 #myproj:active{
   transform: rotate(10deg);
-
 }
 
 #myproj{
-  position:absolute;
+  position: absolute;
   bottom: 30px;
-  left:30px;
+  left: 30px;
   font-size: 20px;
   font-family: "Segoe UI";
   padding: 10px;
@@ -277,11 +242,10 @@ font-style: italic;
   border-radius: 10px;
   background-color: beige;
   box-shadow: 5px 5px black;
-  
 }
 
 @keyframes popin {
-    0% {
+  0% {
     opacity: 0;
     transform: scale(0.6) translateY(100px);
   }
@@ -298,7 +262,8 @@ font-style: italic;
 #intro,
 #intro2,
 #intro3,
-#vidheader,#legend {
+#vidheader,
+#legend {
   opacity: 0;
   transform: scale(0.6) translateY(10px);
   animation: popin 600ms ease-out forwards;
@@ -318,14 +283,8 @@ font-style: italic;
 
 #vidheader{
   animation-delay: 800ms;
-
 }
 
 #legend{
-    animation-delay: 900ms;
+  animation-delay: 900ms;
 }
-
-
-
-
-
