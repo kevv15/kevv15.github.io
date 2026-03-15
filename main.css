@@ -1,0 +1,331 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  /* background:linear-gradient(#ffffff, #4ee7ec93); */
+  /* background:radial-gradient(#ffffff,#1eddff86); */
+  background-color: rgb(238, 213, 167);
+  background-size: contain;
+  overflow-x: hidden;
+  font-family:  'Inter', Georgia, 'Times New Roman', Times, serif;
+}
+
+#gcleff{
+  width: 10%;
+  position: absolute;
+  right: 60px;
+  top: 50px;
+  transform: rotate(1deg);
+}
+
+
+#notes2{
+  width: 4%;
+  position: absolute;
+  left: 90px;
+  top: 40px;
+  transform: rotate(-4deg);
+}
+
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main p{
+font-size: 20px;
+align-self: center;
+color: rgb(0, 0, 0);
+font-style: italic;
+}
+
+
+#page h1{
+  font-size: 50px;
+  font-weight:50;
+  font-style:italic;
+  align-self:center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+#page{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+
+
+}
+
+
+
+#intro{
+  font-size: 40px;
+ font-family: "Segoe UI";
+  border: 2px black;
+  border-style:solid;
+  width: 40vw;
+  font-style:italic;
+  padding: 18px;
+  margin-left: 10px;
+  word-spacing: 3px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px black;
+
+
+  background-color: #2aca8f6b;
+  align-self: flex-start;
+
+
+}
+
+#intro2{
+  font-size: 40px;
+  margin-top:-40px;
+  font-family: "Segoe UI";
+  border: 2px black;
+  border-style:solid;
+  width: 40vw;
+  font-style:italic;
+  padding: 18px;
+  margin-right: 10px;
+  word-spacing: 3px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 10px;
+  box-shadow: -10px 10px black;
+  background-color: #d6fc4e59;
+  align-self: flex-end;
+}
+
+#intro3{
+  font-size: 40px;
+  font-family: "Segoe UI";
+  border: 2px black;
+  border-style:solid;
+  width: 40vw;
+  font-style:italic;
+  padding: 18px;
+  margin-left: 10px;
+  word-spacing: 3px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px black;
+  background-color: #f13f3f67;
+  align-self: flex-start;
+}
+
+#legend{
+  font-size: 40px;
+  font-family: "Segoe UI";
+  border: 2px black;
+  border-style:solid;
+  width: 20vw;
+  font-style:italic;
+  margin-top: 50px;
+  padding: 18px;
+  margin-left: 10px;
+  word-spacing: 3px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px black;
+  background-color: #0dc7ff6b;
+  align-self: flex-start;
+}
+
+#vidheader{
+  position:absolute;
+  bottom: 340px;
+  right:30px;
+  font-size: 20px;
+  font-family: "Segoe UI";
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: -5px 5px black;
+}
+
+#downarr{
+  position: absolute;
+  width: 2%;
+  bottom: 290px;
+  right: 300px;
+}
+
+#ytvid{
+  position:absolute;
+  bottom: 10px;
+  width: 460px;
+  height:270px;
+  right: 60px;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+
+}
+
+#piano{
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  border: 5px solid black;
+
+}
+
+
+
+.keywhite{
+  height: 200px;
+  width: 80px;           
+  background-color: white;
+  border: 1px solid black;
+}
+
+.keyblack{
+  position: absolute;
+  height: 100px;
+  width: 40px;           
+  background-color: black;
+  z-index: 10;
+}
+
+#cs{
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+}
+
+#ds{
+    position: absolute;
+    bottom: 100px;
+    left: 140px;
+}
+
+#fs{
+    position: absolute;
+    bottom: 100px;
+    left: 300px;
+}
+
+#gs{
+    position: absolute;
+    bottom: 100px;
+    left: 380px;
+}
+
+#as{
+    position: absolute;
+    bottom: 100px;
+    left: 460px;
+}
+
+
+
+.keywhite, .keyblack {
+  cursor: pointer;
+  user-select: none;
+  transition: filter 0.05s ease;
+}
+
+
+.keywhite:active {
+  filter: brightness(0.7);
+}
+
+.keyblack:active {
+  filter: brightness(1.2);
+  background-color: rgb(53, 50, 50);
+}
+
+.keywhite.pressed {
+  filter: brightness(0.7);
+}
+
+.keyblack.pressed {
+  filter: brightness(1.2);
+  background-color: rgb(53, 50, 50);
+}
+
+#myproj:active{
+  transform: rotate(10deg);
+
+}
+
+#myproj{
+  position:absolute;
+  bottom: 30px;
+  left:30px;
+  font-size: 20px;
+  font-family: "Segoe UI";
+  padding: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: beige;
+  box-shadow: 5px 5px black;
+  
+}
+
+@keyframes popin {
+    0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(100px);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.12) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+#intro,
+#intro2,
+#intro3,
+#vidheader,#legend {
+  opacity: 0;
+  transform: scale(0.6) translateY(10px);
+  animation: popin 600ms ease-out forwards;
+}
+
+#intro {
+  animation-delay: 100ms;
+}
+
+#intro2 {
+  animation-delay: 300ms;
+}
+
+#intro3 {
+  animation-delay: 500ms;
+}
+
+#vidheader{
+  animation-delay: 800ms;
+
+}
+
+#legend{
+    animation-delay: 900ms;
+}
+
+
+
+
+
