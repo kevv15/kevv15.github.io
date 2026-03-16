@@ -460,6 +460,74 @@ mobile layout
     gap: 18px;
   }
 
+  #page p{
+    margin-left: 3vw;
+  }
+  /* #gcleff{
+    visibility: hidden;
+  }
+
+#notes2{
+  visibility: hidden;
+} */
+  #intro,
+  #intro2,
+  #intro3 {
+    width: 80vw;
+    margin-left: 0;
+    margin-right: 0;
+    align-self: center;
+  }
+
+  #vidheader {
+    margin-left: 0;
+    align-self: center;
+    max-width: 80vw;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  #legend {
+    width: 80vw;
+    margin-left: 0;
+    align-self: center;
+  }
+
+  #legend p {
+    margin: 0;
+  }
+
+  #piano {
+    margin-left: 0;
+  }
+
+  #ytvid {
+    width: 80vw;
+    margin-left: 0;
+  }
+}
+
+
+/* 
+mobile layout
+ */
+@media (max-width: 600px) {
+
+  #page {
+    align-items: center;
+    gap: 18px;
+  }
+
+    #page p{
+    margin-left: 3vw;
+  }
+
   #gcleff{
     visibility: hidden;
   }
