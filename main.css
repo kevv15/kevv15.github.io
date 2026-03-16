@@ -64,7 +64,7 @@ main p{
   width: 40vw;
   font-style: italic;
   padding: 18px;
-  margin-left: 10px;
+  margin-left: 40px;
   word-spacing: 3px;
   font-size: clamp(14px, 1.5vw, 20px);
   line-height: 30px;
@@ -98,7 +98,7 @@ main p{
   width: 40vw;
   font-style: italic;
   padding: 18px;
-  margin-left: 10px;
+  margin-left: 40px;
   word-spacing: 3px;
   font-size: clamp(14px, 1.5vw, 20px);
   line-height: 30px;
@@ -115,7 +115,7 @@ main p{
   font-style: italic;
   margin-top: 50px;
   padding: 18px;
-  margin-left: 10px;
+  margin-left: 40px;
   word-spacing: 3px;
   font-size: clamp(12px, 1.2vw, 20px);
   line-height: 30px;
@@ -276,11 +276,188 @@ main p{
   display: flex;
 
 }
+
+/* macbook and smaller screens */
+@media (max-width: 1500px) {
+
+  #page {
+    gap: 5px;
+  }
+
+  #page h1 {
+    font-size: clamp(22px, 3vw, 42px);
+    padding: 8px 14px;
+  }
+
+  main p {
+    font-size: 16px;
+  }
+
+  #gcleff {
+    width: clamp(50px, 6vw, 90px);
+    right: 40px;
+    top: 35px;
+  }
+
+  #notes2 {
+    width: clamp(24px, 2.5vw, 45px);
+    left: 70px;
+    top: 30px;
+  }
+
+  #intro,
+  #intro2,
+  #intro3 {
+    width: 42vw;
+    padding: 14px;
+    line-height: 1.7;
+    font-size: clamp(13px, 1.2vw, 18px);
+  }
+
+  #intro {
+    margin-left: 22px;
+  }
+
+  #intro2 {
+    margin-left: 54vw;
+    margin-right: 0;
+  }
+
+  #intro3 {
+    margin-left: 22px;
+  }
+
+  #vidheader {
+    margin-left: 66vw;
+    max-width: 28vw;
+    font-size: clamp(13px, 1.2vw, 18px);
+    padding: 8px 12px;
+  }
+
+  .row {
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  #legend {
+    width: 19vw;
+    padding: 14px;
+    font-size: clamp(11px, 1vw, 16px);
+    line-height: 1.6;
+    margin-top: 30px;
+  }
+
+  #legend p {
+    margin: 0;
+  }
+
+  #piano {
+    margin-left: 6vw;
+    margin-top: 10px;
+    transform: scale(0.92);
+    transform-origin: top left;
+  }
+
+  #ytvid {
+    width: 19vw;
+    margin-left: 2vw;
+  }
+}
+
+
+@media (max-width: 1300px) {
+
+  #page {
+    gap: 5px;
+  }
+
+  #page h1 {
+    font-size: clamp(22px, 3vw, 42px);
+    padding: 8px 14px;
+  }
+
+  main p {
+    font-size: 16px;
+  }
+
+  #gcleff {
+    width: clamp(50px, 6vw, 90px);
+    right: 40px;
+    top: 35px;
+  }
+
+  #notes2 {
+    width: clamp(24px, 2.5vw, 45px);
+    left: 70px;
+    top: 30px;
+  }
+
+  #intro,
+  #intro2,
+  #intro3 {
+    width: 42vw;
+    padding: 14px;
+    line-height: 1.7;
+    font-size: clamp(13px, 1.2vw, 18px);
+  }
+
+  #intro {
+    margin-left: 12px;
+  }
+
+  #intro2 {
+    margin-left: 54vw;
+    margin-right: 0;
+  }
+
+  #intro3 {
+    margin-left: 12px;
+  }
+
+  #vidheader {
+    margin-left: 66vw;
+    max-width: 28vw;
+    font-size: clamp(13px, 1.2vw, 18px);
+    padding: 8px 12px;
+  }
+
+  .row {
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  #legend {
+    width: 19vw;
+    padding: 14px;
+    font-size: clamp(11px, 1vw, 16px);
+    line-height: 1.6;
+    margin-top: 30px;
+  }
+
+  #legend p {
+    margin: 0;
+  }
+
+  #piano {
+    margin-left: 6vw;
+    margin-top: 10px;
+    transform: scale(0.92);
+    transform-origin: top left;
+  }
+
+  #ytvid {
+    width: 19vw;
+    margin-left: 2vw;
+  }
+}
+/* 
+mobile layout
+ */
 @media (max-width: 1100px) {
 
   #page {
     align-items: center;
-    gap: 35px;
+    gap: 18px;
   }
 
   #intro,
