@@ -460,6 +460,13 @@ mobile layout
     gap: 18px;
   }
 
+  #gcleff{
+    visibility: hidden;
+  }
+
+#notes2{
+  visibility: hidden;
+}
   #intro,
   #intro2,
   #intro3 {
